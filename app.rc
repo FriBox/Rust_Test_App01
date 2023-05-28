@@ -1,0 +1,33 @@
+1 VERSIONINFO
+FILEVERSION 0,0,99,0  //文件版本号
+PRODUCTVERSION 0,0,99,0  //产品版本号
+FILEFLAGSMASK 0x3fL
+FILEFLAGS 0x0L
+FILEOS 0x40004L
+FILETYPE 0x1L
+FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"  //语言代码
+        BEGIN
+            VALUE "FileDescription", "FriBox Rust Application\0"  //文件说明*
+            VALUE "FileVersion", "0.0.99.0\0"  //文件版本号*
+            VALUE "ProductName", "FriBox_Rust_Application\0"  //产品名称*
+            VALUE "ProductVersion", "0.0.99.0\0"  //产品版本号*
+            VALUE "LegalCopyright", "(c) 2016-2023 FriBox China - All rights reserved.\0"  //版权信息*
+            VALUE "OriginalFilename", "FriBox_Rust_Application.exe\0"  //原始文件名*
+            VALUE "Comments", "FriBox Rust Application\0"  //备注
+            VALUE "CompanyName", "FriBox China\0"  //公司名称
+            VALUE "InternalName", "FriBox Rust App\0"  //内部名称
+            VALUE "LegalTrademarks", "FriBox China\0"  //公司名称
+            VALUE "ProgramID", "cn.FriBox.FBSysFramework\0"  //公司名称
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+1 ICON "main.ico"

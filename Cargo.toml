@@ -1,0 +1,22 @@
+[package]
+name = "test_app01"
+version = "0.1.0"
+edition = "2021"
+build = "build.rs"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+
+[build-dependencies]
+embed-resource =  "2.1.1"
+
+[profile.release]
+opt-level = 3
+debug = 0
+debug-assertions = false
+strip= "debuginfo" #  -C strip flag 去除不必要的标头和调试信息，size减少大概30%
+overflow-checks = true #运行期 溢出类型检查
+lto = true  #Link time opt链接过程优化，size减少大概50%
+
+# Cargo clean & Cargo build --release
